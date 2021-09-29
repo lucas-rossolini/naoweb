@@ -1,20 +1,16 @@
 html {
     font-size: 62.5%;
     font-family: 'IBM Plex Mono', monospace;
+    height: 3000px;
 }
 
 body {
-  background-color: lightgray;
+  background-color: white;
 }
-h1 {
-  position: fixed;
-  top: 4rem;
-  left: 4rem;
-  z-index: 6;
-  font-size: 2rem;
-  font-weight: 900;
-  text-transform: uppercase;
-}
+
+/*----------------------------------
+        Menu burger
+----------------------------------*/
 
 input {
     display: none;
@@ -70,7 +66,7 @@ input:checked + label span:last-child {
   transform: rotate(-405deg);
 }
 
-nav {
+#nav-header {
   position: fixed;
   top: 0;
   left: 0;
@@ -83,7 +79,7 @@ nav {
   overflow: hidden;
 }
 
-ul {
+#nav-header ul {
   text-align: right;
   position: absolute;
   top: 20rem;
@@ -92,13 +88,13 @@ ul {
   color: white;
 }
 
-li {
+#nav-header ul li {
   opacity: 0;
   transition: 0.5s;
   transition-delay: 0s;
 }
 
-li a {
+#nav-header ul li a {
   text-decoration: none;
   color: white;
   font-weight: 300;
@@ -107,12 +103,43 @@ li a {
   font-size: 2rem;
 }
 
-input:checked ~ nav {
+input:checked ~ #nav-header {
   height: 100%;
   transition-delay: 0s;
 }
 
-input:checked ~ nav ul li {
+input:checked ~ #nav-header ul li {
   opacity: 1;
   transition-delay: 0.5s;
 }
+
+/*----------------------------------
+        Fin menu burger
+----------------------------------*/
+
+/*----------------------------------
+        Accueil
+----------------------------------*/
+
+#accueil {
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1525373698358-041e3a460346?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=764&q=80);
+    background-repeat: no-repeat;
+}
+
+#logo-nav {
+    position: fixed;
+    height: 100vh;
+    top: 3rem;
+    left: 4rem;
+    z-index: 6;
+    font-size: 2rem;
+    font-weight: 400;
+    color: blue;
+  }
+
+  #logo-part2{
+      position: absolute;
+      top: 52rem;
+      left: 35rem;
+  }
