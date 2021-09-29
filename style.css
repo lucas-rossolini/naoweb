@@ -1,5 +1,6 @@
 html {
     font-size: 62.5%;
+    font-family: 'IBM Plex Mono', monospace;
 }
 
 body {
@@ -12,7 +13,6 @@ h1 {
   z-index: 6;
   font-size: 2rem;
   font-weight: 900;
-  font-family: sans-serif;
   text-transform: uppercase;
 }
 
@@ -86,9 +86,8 @@ nav {
 ul {
   text-align: right;
   position: absolute;
-  top: 5rem;
-  /* left: 8rem; */
-  right: 8rem;
+  top: 20rem;
+  right: 3.5rem;
   list-style-type: none;
   color: white;
 }
@@ -102,10 +101,10 @@ li {
 li a {
   text-decoration: none;
   color: white;
-  font-weight: 700;
-  font-family: sans-serif;
+  font-weight: 300;
   display: block;
-  padding: 1rem;
+  padding: 1.5rem;
+  font-size: 2rem;
 }
 
 input:checked ~ nav {
