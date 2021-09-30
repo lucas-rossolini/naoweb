@@ -35,9 +35,11 @@ footer a:hover {
 .link1 {
     grid-area: link1;
     
+
 }
 .link2 {
     grid-area: link2;
+    
 }
 .link3 {
     grid-area: link3;
@@ -49,25 +51,7 @@ footer a:hover {
     grid-area: link5;
 }
 
-.link1:before {
-    content: url(./icone/noun_Home_4270443.svg);
-}
 
-.link2:before {
-    content: url(./icone/noun_Events\ calendar_3006931.svg);
-}
-
-.link3:before {
-    content: url(./icone/noun_working_1235867.svg);
-}
-
-.link4:before {
-    content: url(./icone/noun_Search\ Job_4273635.svg);
-}
-
-.link5:before {
-    content: url(./icone/noun_Mail_1052568.svg);
-}
 .copy {
     margin-top: 1em;
     text-align: center;
@@ -76,7 +60,14 @@ a {
     text-decoration: none;
     color: black;
     font-size: 1em;
-    width: 75px;
-    height: 110px;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5PX;
+   
+}
+
+img {
+  width: 50px;
+  height: 50px;
 }
