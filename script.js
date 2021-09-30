@@ -4,26 +4,27 @@
   const logoPart2 = document.querySelector("#logo-part2");
   const scrollElement = document.querySelector("#scroll-element");
 
-  const elementInView = function(el, offset = 0){
+  // This function checks my element distance's from top of the window.
+  function elementInView(el, offset = 0){
     const elementTop = el.getBoundingClientRect().top;
-    console.log(elementTop)
     return (
       elementTop <= ((window.innerHeight || document.documentElement.clientHeight) - offset)
     );
   };
 
-  const displayScrollElement = function(){
+  // If elementInView return true, the element entered my inview area so I add classes for transitions.
+  function displayScrollElement(){
     logoPart1.classList.add('align')
     logoPart2.classList.add('scrolled');
 
   }
-
-  const hideScrollElement = function() {
+// If my element exits my inview area I removed the classes.
+  function hideScrollElement() {
     logoPart1.classList.remove('align');
     logoPart2.classList.remove('scrolled');
   }
 
-  const handleScrollAnimation = function() {
+  function handleScrollAnimation() {
     if (elementInView(scrollElement, scrollOffset)) {
         displayScrollElement(scrollElement);
     } else {

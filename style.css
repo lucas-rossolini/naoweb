@@ -1,7 +1,6 @@
 html {
   font-size: 62.5%;
   font-family: "IBM Plex Mono", monospace;
-  height: 3000px;
 }
 
 body {
@@ -114,7 +113,7 @@ input:checked ~ #nav-header ul li {
 }
 
 #nav-header a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /*----------------------------------
@@ -175,76 +174,89 @@ input:checked ~ #nav-header ul li {
   top: 45rem;
   left: 25rem;
 }
+
+/*----------------------------------
+        Fin accueil
+----------------------------------*/
+
+/*----------------------------------
+        Footer
+----------------------------------*/
+
 section {
-    background-color: rgb(172, 165, 165);
-    height: 28em;
+  background-color: rgb(172, 165, 165);
+  height: 28em;
 }
 
 footer {
-    background-color: #dbcde2;
+  background-color: #dbcde2;
 }
 .logo {
-    height: 2.5em;
-text-align: center;
-    color: darkblue;
-    margin: 2em 10% 0 10%;
-    font-size: 3em;
-    border-top: solid black;
+  height: 2.5em;
+  text-align: center;
+  color: darkblue;
+  margin: 2em 10% 0 10%;
+  font-size: 3em;
+  border-top: solid black;
 }
 
 footer a:hover {
-    color: #ed1b24;
+  color: #ed1b24;
 }
 
 .footer-menu {
-    display: grid;
-    justify-items: center;
-    text-align: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 10px 5px;
-    margin-bottom: 2em;
-    grid-template-areas:
-        "link1 link1 link2 link2"
-        "link3 link3 link4 link4"
-        ". link5 link5 .";
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px 5px;
+  margin-bottom: 2em;
+  grid-template-areas:
+    "link1 link1 link2 link2"
+    "link3 link3 link4 link4"
+    ". link5 link5 .";
 }
 .link1 {
-    grid-area: link1;
-    
-
+  grid-area: link1;
 }
+
 .link2 {
-    grid-area: link2;
-    
-}
-.link3 {
-    grid-area: link3;
-}
-.link4 {
-    grid-area: link4;
-}
-.link5 {
-    grid-area: link5;
+  grid-area: link2;
 }
 
+.link3 {
+  grid-area: link3;
+}
+
+.link4 {
+  grid-area: link4;
+}
+
+.link5 {
+  grid-area: link5;
+}
 
 .copy {
-    margin-top: 1em;
-    text-align: center;
+  margin-top: 1em;
+  text-align: center;
 }
+
 a {
-    text-decoration: none;
-    color: black;
-    font-size: 1em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5PX;
-   
+  text-decoration: none;
+  color: black;
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
 }
 
 img {
   width: 50px;
   height: 50px;
 }
+
+/*----------------------------------
+        Fin footer
+----------------------------------*/
