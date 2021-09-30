@@ -1,7 +1,7 @@
 html {
-    font-size: 62.5%;
-    font-family: 'IBM Plex Mono', monospace;
-    height: 3000px;
+  font-size: 62.5%;
+  font-family: "IBM Plex Mono", monospace;
+  height: 3000px;
 }
 
 body {
@@ -13,7 +13,7 @@ body {
 ----------------------------------*/
 
 input {
-    display: none;
+  display: none;
 }
 
 label {
@@ -113,6 +113,10 @@ input:checked ~ #nav-header ul li {
   transition-delay: 0.5s;
 }
 
+#nav-header a:hover {
+    text-decoration: underline;
+}
+
 /*----------------------------------
         Fin menu burger
 ----------------------------------*/
@@ -122,24 +126,52 @@ input:checked ~ #nav-header ul li {
 ----------------------------------*/
 
 #accueil {
-    height: 100vh;
-    background-image: url(https://images.unsplash.com/photo-1525373698358-041e3a460346?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=764&q=80);
-    background-repeat: no-repeat;
+  height: 100vh;
+  background-image: url(https://images.unsplash.com/photo-1525373698358-041e3a460346?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=764&q=80);
+  background-repeat: no-repeat;
 }
 
 #logo-nav {
-    position: fixed;
-    height: 100vh;
-    top: 3rem;
-    left: 4rem;
-    z-index: 6;
-    font-size: 2rem;
-    font-weight: 400;
-    color: blue;
-  }
+  /* position: fixed; */
+  height: 100vh;
+  top: 1rem;
+  left: 4rem;
+  z-index: 6;
+  font-size: 5rem;
+  font-weight: 400;
+  color: blue;
+}
 
-  #logo-part2{
-      position: absolute;
-      top: 52rem;
-      left: 35rem;
-  }
+#logo-part1 {
+  position: fixed;
+  top: -5rem;
+  left: 3rem;
+  transition: transform, font-size;
+  transition-duration: 1s;
+}
+
+#logo-part2 {
+  position: fixed;
+  top: 45rem;
+  left: 30rem;
+  transition: transform, font-size;
+  transition-duration: 1s;
+}
+
+.align {
+  transform: translate(1rem, 5rem);
+  font-size: 3rem;
+}
+
+.scrolled {
+  font-size: 3rem;
+  transform: translate(-21rem, -45rem);
+}
+
+#scroll-element {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  top: 45rem;
+  left: 25rem;
+}
