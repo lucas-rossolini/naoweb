@@ -1,0 +1,82 @@
+section {
+    background-color: rgb(172, 165, 165);
+    height: 28em;
+}
+
+footer {
+    background-color: #dbcde2;
+}
+.logo {
+    height: 2.5em;
+text-align: center;
+    color: darkblue;
+    margin: 2em 10% 0 10%;
+    font-size: 3em;
+    border-top: solid black;
+}
+
+footer a:hover {
+    color: #ed1b24;
+}
+
+.footer-menu {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px 5px;
+    margin-bottom: 2em;
+    grid-template-areas:
+        "link1 link1 link2 link2"
+        "link3 link3 link4 link4"
+        ". link5 link5 .";
+}
+.link1 {
+    grid-area: link1;
+    
+}
+.link2 {
+    grid-area: link2;
+}
+.link3 {
+    grid-area: link3;
+}
+.link4 {
+    grid-area: link4;
+}
+.link5 {
+    grid-area: link5;
+}
+
+.link1:before {
+    content: url(./icone/noun_Home_4270443.svg);
+}
+
+.link2:before {
+    content: url(./icone/noun_Events\ calendar_3006931.svg);
+}
+
+.link3:before {
+    content: url(./icone/noun_working_1235867.svg);
+}
+
+.link4:before {
+    content: url(./icone/noun_Search\ Job_4273635.svg);
+}
+
+.link5:before {
+    content: url(./icone/noun_Mail_1052568.svg);
+}
+.copy {
+    margin-top: 1em;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    width: 75px;
+    height: 110px;
+    
+}
