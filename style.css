@@ -4,19 +4,19 @@ section {
 }
 
 footer {
-    background-color: #dbcde2;
+    background-color: #2417db;
 }
 .logo {
     height: 2.5em;
-text-align: center;
-    color: darkblue;
+    text-align: center;
+    color: rgb(228, 228, 240);
     margin: 2em 10% 0 10%;
     font-size: 3em;
     border-top: solid black;
 }
 
 footer a:hover {
-    color: #ed1b24;
+    color: #dbdbe7;
 }
 
 .footer-menu {
@@ -34,12 +34,9 @@ footer a:hover {
 }
 .link1 {
     grid-area: link1;
-    
-
 }
 .link2 {
     grid-area: link2;
-    
 }
 .link3 {
     grid-area: link3;
@@ -50,7 +47,6 @@ footer a:hover {
 .link5 {
     grid-area: link5;
 }
-
 
 .copy {
     margin-top: 1em;
@@ -63,11 +59,34 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5PX;
-   
+    gap: 5px;
 }
 
 img {
-  width: 50px;
-  height: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+@media only screen and (min-width: 480px) {
+    .footer-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 2em;
+    }
+    a {
+        display: inline-block;
+
+        font-size: 2.5em;
+        border-right: solid black;
+        padding: 0 1em 0 1em;
+    }
+
+    footer a:hover {
+        background-color: #dbdbe7;
+        color: blue;
+    }
+    img {
+        display: none;
+    }
 }
