@@ -1,34 +1,31 @@
 
-.footer{
+#footer{
     border-top: solid rgb(48, 12, 177);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    margin: 0 1em;
 }
-
-
 .logo {
     height: 2em;
     text-align: center;
     color: #1515b4;
     font-size: 3em;
+    
    
 }
 
-footer a:hover {
+#footer a:hover {
     color: #dbdbe7;
 }
 
-.footer-menu {
-    
-}
 .copy {
     
     text-align:left ;
     font-size: 10px;
    color: #0f0f9b;
 }
-.footer a {
+#footer a {
     margin-top: 1em;
     text-decoration: none;
     color: rgb(47, 8, 187);
@@ -37,6 +34,7 @@ footer a:hover {
     flex-direction: column;
     align-items:flex-end;
     gap: 4px;
+    
 }
 
 .img_footer {
@@ -44,12 +42,16 @@ footer a:hover {
     height: 40px;
 }
 
+.copyDesk{
+    display: none;
+}
+
 @media only screen and (min-width: 480px) {
-    .footer {
+    #footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin: 2em ;
+        margin: 1em ;
     }
     .footer-menu{
         
@@ -58,23 +60,38 @@ footer a:hover {
         display: flex;
         flex-direction: row;
         align-items:center;
+        justify-content: center;
+        margin-right: 1em;
+        
         
     }
-.footer a    {   
-        gap: 4px;       
+
+    .logo{
+        margin-top: 1em;
+        margin-left: 1em;
+    }
+
+    #footer a    {   
+        gap: 1em;       
         font-size: 2.5em;
         border-right: solid rgb(62, 5, 194);
         padding: 0 1em 0 1em;
     }
 
-    footer a:hover {
-        background-color: #dbdbe7;
-        color: blue;
+    #footer a:hover {
+        background-color: #0f0fdf;
+        color: rgb(238, 238, 246);
     }
     .img_footer {
         display: none;
     }
     .copy{
         display: none;
+    }
+    .copyDesk{
+        display: inline;
+        margin-left: 92%;
+        font-size: 1em;
+        color: #0f0f9b;
     }
 }

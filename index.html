@@ -8,13 +8,14 @@
     </head>
     
 
-    <footer class="footer">
+    <footer id="footer_top" >
+        <section id="footer">
         <div class="logo">NAO_<br>WEB
             <p class="copy">Nao_Web &copy; 2021</p>
         </div>
         <div class="footer-menu">
             <a class="link1" href="#"
-                ><img class=img_footer src="icone/home.svg" title="HOME" alt="HOME" />_HOME
+                ><img class=img_footer src="icone/home.svg" title="HOME" alt="HOME" />_Home
             </a>
 
             <a class="link2" href="#"
@@ -45,14 +46,13 @@
                 />_Contact</a
             >
         </div>
+    </section>
     </footer>
-        <script>
-const footer=document.getElementsByClassName("footer");
-console.log(footer)
+<script type="text/javascript">
 const newP = document.createElement("p");
-Text = document.createTextNode("This is a new paragraph.");
-newP.appendChild(Text)
-Footer.appendChild(newP)
-        </script>
-    
+newP.classList="copyDesk";
+newP.innerHTML='Nao_Web &copy; 2021';
+const footer=document.getElementById("footer_top");
+footer.appendChild(newP);
+</script>
 </html>
