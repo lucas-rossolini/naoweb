@@ -1,18 +1,18 @@
-section {
-    background-color: rgb(172, 165, 165);
-    height: 28em;
+
+.footer{
+    border-top: solid rgb(48, 12, 177);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-footer {
-    background-color: #2417db;
-}
+
 .logo {
-    height: 2.5em;
+    height: 2em;
     text-align: center;
-    color: rgb(228, 228, 240);
-    margin: 2em 10% 0 10%;
+    color: #1515b4;
     font-size: 3em;
-    border-top: solid black;
+   
 }
 
 footer a:hover {
@@ -20,65 +20,50 @@ footer a:hover {
 }
 
 .footer-menu {
-    display: grid;
-    justify-items: center;
-    text-align: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 10px 5px;
-    margin-bottom: 2em;
-    grid-template-areas:
-        "link1 link1 link2 link2"
-        "link3 link3 link4 link4"
-        ". link5 link5 .";
+    
 }
-.link1 {
-    grid-area: link1;
-}
-.link2 {
-    grid-area: link2;
-}
-.link3 {
-    grid-area: link3;
-}
-.link4 {
-    grid-area: link4;
-}
-.link5 {
-    grid-area: link5;
-}
-
 .copy {
-    margin-top: 1em;
-    text-align: center;
+    
+    text-align:left ;
+    font-size: 10px;
+   color: #0f0f9b;
 }
-a {
+.footer a {
+    margin-top: 1em;
     text-decoration: none;
-    color: black;
+    color: rgb(47, 8, 187);
     font-size: 1em;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 5px;
+    align-items:flex-end;
+    gap: 4px;
 }
 
-img {
-    width: 50px;
-    height: 50px;
+.img_footer {
+    width: 40px;
+    height: 40px;
 }
 
 @media only screen and (min-width: 480px) {
-    .footer-menu {
+    .footer {
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        margin-bottom: 2em;
+        justify-content: space-between;
+        margin: 2em ;
     }
-    a {
-        display: inline-block;
-
+    .footer-menu{
+        
+        text-decoration: none;
+        color: rgb(47, 8, 187);
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        
+    }
+.footer a    {   
+        gap: 4px;       
         font-size: 2.5em;
-        border-right: solid black;
+        border-right: solid rgb(62, 5, 194);
         padding: 0 1em 0 1em;
     }
 
@@ -86,7 +71,10 @@ img {
         background-color: #dbdbe7;
         color: blue;
     }
-    img {
+    .img_footer {
+        display: none;
+    }
+    .copy{
         display: none;
     }
 }
