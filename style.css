@@ -1,10 +1,15 @@
 html {
   font-size: 62.5%;
   font-family: "IBM Plex Mono", monospace;
+  height: 3000px;
 }
 
 body {
   background-color: white;
+}
+
+h2, h4{
+    margin: 0;
 }
 
 /*----------------------------------
@@ -63,6 +68,10 @@ input:checked + label span:last-child {
   opacity: 1;
   background-color: white;
   transform: rotate(-405deg);
+}
+
+.white {
+    background-color: white;
 }
 
 #nav-header {
@@ -128,6 +137,7 @@ input:checked ~ #nav-header ul li {
   height: 100vh;
   background-image: url(https://images.unsplash.com/photo-1525373698358-041e3a460346?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=764&q=80);
   background-repeat: no-repeat;
+  margin: 0;
 }
 
 #logo-nav {
@@ -136,36 +146,50 @@ input:checked ~ #nav-header ul li {
   top: 1rem;
   left: 4rem;
   z-index: 6;
-  font-size: 5rem;
+  font-size: 12rem;
   font-weight: 400;
   color: blue;
 }
 
 #logo-part1 {
   position: fixed;
-  top: -5rem;
+  top: -17rem;
   left: 3rem;
-  transition: transform, font-size;
-  transition-duration: 1s;
+  transition: transform 0.6s, font-size 0.8s, color 1s;
+  /* transition-duration: 1s; */
 }
 
 #logo-part2 {
   position: fixed;
-  top: 45rem;
-  left: 30rem;
-  transition: transform, font-size;
-  transition-duration: 1s;
+  top: 30rem;
+  left: 15rem;
+  transition: transform 0.6s, font-size 0.8s, color 1s;
+  /* transition-duration: 1s; */
 }
 
 .align {
-  transform: translate(1rem, 5rem);
-  font-size: 3rem;
+  color: white;
+  transform: translate(0rem, 0rem);
+  /* font-size: 3rem; */
 }
 
+.align2 {
+    color: #3000FF;
+    transform: translate(0rem, 17rem);
+    font-size: 3rem;
+  }
+
 .scrolled {
-  font-size: 3rem;
-  transform: translate(-21rem, -45rem);
+  color: white;
+  /* font-size: 3rem; */
+  transform: translate(0rem, -28rem);
 }
+
+.scrolled2 {
+    color: #3000FF;
+    font-size: 3rem;
+    transform: translate(-4.5rem, -30rem);
+  }
 
 #scroll-element {
   width: 1rem;
@@ -180,13 +204,36 @@ input:checked ~ #nav-header ul li {
 ----------------------------------*/
 
 /*----------------------------------
+        Présantation
+----------------------------------*/
+#presentation{
+    background-color: #3000FF;
+    margin: 0;
+    color: white;
+    padding-bottom: 3rem;
+}
+
+#titre-presentation{
+    padding: 40rem 0 5rem 3rem;
+}
+
+#text-presentation {
+    padding-left: 15rem;
+    padding-right: 3rem;
+}
+
+/*----------------------------------
+        Fin Présentation
+----------------------------------*/
+
+/*----------------------------------
         Footer
 ----------------------------------*/
 
-section {
+/* section {
   background-color: rgb(172, 165, 165);
   height: 28em;
-}
+} */
 
 footer {
   background-color: #dbcde2;
