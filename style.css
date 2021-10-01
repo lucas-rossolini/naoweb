@@ -1,0 +1,55 @@
+body{
+    margin : 0;
+}
+.text {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
+    color: blue;
+    font-size: 20px;
+    text-align: center;
+
+
+
+}
+h1.color#contour {
+
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 700;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: blue;      
+    color:transparent;
+    font-size: 50px;
+    text-align: center;
+}
+
+.carousel-container{
+
+    background-color:blue ;
+    margin: 2em;
+    text-align: center;
+    color: white;
+}
+
+.carousels {
+
+    display: flex;
+    justify-content:space-around;
+    flex-direction: column;
+    align-content: center;
+
+}
+h2.color {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
+    color: blue;
+    font-size: 35px;
+    text-align: center;
+}
+
+.button {
+    color: white;
+}
+
+.img_event {
+max-width: 100%;
+}
