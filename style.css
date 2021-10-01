@@ -39,9 +39,13 @@ body{
   padding-left: 10px;
 }
 
+.contact-section form input:focus{
+  outline: none;
+}
+
 .contact-section form select{
   height: 46px;
-  width: 328px;
+  width: 336px;
   border: 2px blue solid;
   border-radius: 50px;
   color: blue;
@@ -54,6 +58,10 @@ body{
   font-family: 'IBM Plex Mono', monospace;
 }
 
+.contact-section form select:focus{
+  outline: none;
+}
+
 .contact-section form option{
   color: blue;
   font-family: 'IBM Plex Mono', monospace;
@@ -61,11 +69,15 @@ body{
 
 .contact-section form textarea{
   height: 120px;
-  width: 320px;
+  width: 312px;
   border: 2px blue solid;
   border-radius: 20px;
   resize: none;
   padding: 10px;
+}
+
+.contact-section form textarea:focus{
+  outline: none;
 }
 
 .contact-section .button{
@@ -80,4 +92,55 @@ body{
   border: none;
   border-radius: 50px;
   font-family: 'IBM Plex Mono', monospace;
+}
+
+@media (min-width: 1200px) {
+  body{
+    background-color: blue;
+  }
+
+  .contact-section h1{
+    color: blue;
+    -webkit-text-stroke: 1px white;
+  }
+
+  .contact-section form label{
+    color: white;
+  }
+
+  .contact-section form input{
+    border: 2px white solid;
+    background-color: blue;
+    color: white;
+    width: 1059px;
+  }
+
+  .contact-section form select{
+    border: 2px white solid;
+    background: url(./arrow-white.png) no-repeat right;
+    background-size: 20px;
+    background-position-x: 1029px;
+    color: white;
+    width: 1075px;
+  }
+
+  .contact-section form select option{
+    color: blue;
+  }
+
+  .contact-section form option{
+    color: white;
+  }
+
+  .contact-section form textarea{
+    border: 2px white solid;
+    background-color: blue;
+    color: white;
+    width: 1051px;
+  }
+
+  .contact-section form button{
+    background-color: white;
+    color: blue;
+  }
 }
