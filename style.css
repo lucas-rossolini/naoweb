@@ -6,7 +6,7 @@ body{
     font-weight: 400;
     color: blue;
     font-size: 20px;
-    text-align: center;
+    text-align: left;
 
 
 
@@ -24,10 +24,14 @@ h1.color#contour {
 
 .carousel-container{
 
-    background-color:blue ;
+    
     margin: 2em;
     text-align: center;
-    color: white;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
+    color: black;
+    font-size: 20px;
+    text-align: left;
 }
 
 .carousels {
@@ -47,7 +51,12 @@ h2.color {
 }
 
 .button {
-    color: white;
+    
+    margin-left: 2em;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
+    color: black;
+    font-size: 20px;
 }
 
 .img_event {
