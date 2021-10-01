@@ -1,33 +1,28 @@
-body{
-    margin : 0;
+body {
+    margin: 0;
 }
 .text {
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: "IBM Plex Mono", monospace;
     font-weight: 400;
     color: blue;
     font-size: 20px;
     text-align: left;
-
-
-
+    margin-left: 1em;
 }
 h1.color#contour {
-
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: "IBM Plex Mono", monospace;
     font-weight: 700;
     -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: blue;      
-    color:transparent;
+    -webkit-text-stroke-color: blue;
+    color: transparent;
     font-size: 50px;
     text-align: center;
 }
 
-.carousel-container{
-
-    
-    margin: 2em;
+.carousel-container {
+    margin: 1em;
     text-align: center;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: "IBM Plex Mono", monospace;
     font-weight: 400;
     color: black;
     font-size: 20px;
@@ -35,15 +30,13 @@ h1.color#contour {
 }
 
 .carousels {
-
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     flex-direction: column;
     align-content: center;
-
 }
 h2.color {
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: "IBM Plex Mono", monospace;
     font-weight: 600;
     color: blue;
     font-size: 35px;
@@ -51,14 +44,22 @@ h2.color {
 }
 
 .button {
-    
-    margin-left: 2em;
-    font-family: 'IBM Plex Mono', monospace;
+    margin-left: 50%;
+    font-family: "IBM Plex Mono", monospace;
     font-weight: 400;
     color: black;
     font-size: 20px;
 }
 
+.button:hover {
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+}
 .img_event {
-max-width: 100%;
+    max-width: 100%;
+}
+
+#calendrier {
+    margin: 1em;
 }
