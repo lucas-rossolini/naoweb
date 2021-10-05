@@ -51,10 +51,10 @@
         transform: rotate(0deg);
     }
 }
-a.link_footer :hover {
-    animation-name: icon;
-    animation-duration: 2s;
-    animation-iteration-count: 1e;
+a:hover .img_footer {
+    transform: rotate(360deg) scale(1.2);
+    transition: all 1s ease-in-out;
+    
 }
 
 .copyDesk {
