@@ -16,9 +16,6 @@
     padding-top: 2em;
 }
 
-#footer a:hover {
-}
-
 .copy {
     text-align: left;
     font-family: "IBM Plex Mono", monospace;
@@ -43,6 +40,21 @@
 .img_footer {
     width: 30px;
     height: 30px;
+}
+
+@keyframes icon {
+    0% {
+        transform: rotate(-360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+a.link_footer :hover {
+    animation-name: icon;
+    animation-duration: 2s;
+    animation-iteration-count: 1e;
 }
 
 .copyDesk {
@@ -81,8 +93,6 @@
         font-size: 25px;
     }
 
-    #footer a:hover {
-    }
     .img_footer {
         display: none;
     }
