@@ -1,3 +1,76 @@
+=======
+body {
+    margin: 0;
+}
+.presentation {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    color: blue;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 1em;
+    width: 70%;
+}
+h1.color#contour {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 700;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: blue;
+    color: transparent;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.carousel-container {
+    margin: 1em;
+    text-align: center;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    color: black;
+    font-size: 20px;
+    text-align: left;
+}
+
+.carousels {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-content: center;
+}
+h2.color {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
+    color: blue;
+    font-size: 35px;
+    text-align: center;
+}
+
+.button {
+    margin-left: 50%;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    color: black;
+    font-size: 20px;
+}
+
+.button:hover {
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+}
+.img_event {
+    max-width: 100%;
+}
+
+.iframe {
+   margin: 1% 2%;
+
+}
+.content{
+
+    width: 70%;
+}
 
 /*------------------------------------
 --------------------------------------
@@ -164,3 +237,4 @@ a:hover .img_footer {
     margin: 0;
   }
 }
+
