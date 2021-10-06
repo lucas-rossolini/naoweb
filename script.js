@@ -1,5 +1,5 @@
   const scrollOffset = 100;
-  const scrollOffset2 = 500;
+  // const scrollOffset2 = 100;
 
   const logoPart1 = document.querySelector("#logo-part1");
   const logoPart2 = document.querySelector("#logo-part2");
@@ -80,7 +80,7 @@
   }
 
   function handleScrollAnimation2() {
-    if (elementInView2(scrollElement2, scrollOffset2)) {
+    if (elementInView2(scrollElement2, scrollOffset)) {
         displayScrollElement2(scrollElement2);
     } else {
       hideScrollElement2(scrollElement2);
