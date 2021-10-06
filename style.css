@@ -121,7 +121,6 @@ a:hover .img_footer {
     transition: background-color 1s ease-in;
   }
 }
-}
 @media only screen and (min-width: 768px) and (max-width: 1050px) {
   .footer {
     display: flex;
@@ -173,6 +172,6 @@ a:hover .img_footer {
     color: white;
     transition: background-color 1s ease-in;
   }
-  }
+ 
 
 
