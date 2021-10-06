@@ -17,7 +17,7 @@ Font Noir sans couleur
 
 /*Ajouter : id="contour"//////////////////////////*/
 
-h1#contour {
+h1.contour{
 
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 700;
@@ -73,7 +73,7 @@ Font coloré sur fond blanc >> Ne pas oublier de mettre la class = "color"
 
 /*Ajouter : id="contour"//////////////////////////*/
 
-h1.color#contour {
+h1.color.contour {
 
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 700;
@@ -130,7 +130,7 @@ Font blanche sur fond coloré >> Ne pas oublier de mettre la class = "white"
 
 /*Ajouter : id="contour"//////////////////////////*/
 
-h1.white#contour {
+h1.white.contour {
 
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 700;
