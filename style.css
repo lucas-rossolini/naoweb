@@ -115,9 +115,15 @@ a:hover .img_footer {
     text-align: right;
     margin: 0;
   }
+  .footer-menu :hover{
+    background-color: blue;
+    color: white;
+    transition: background-color 1s ease-in;
+  }
+}
 }
 @media only screen and (min-width: 768px) and (max-width: 1050px) {
-  #footer {
+  .footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -135,7 +141,7 @@ a:hover .img_footer {
     padding-top: 1em;
   }
 
-  #footer a {
+  .footer a {
     gap: 0.5em;
     border-right: solid rgb(62, 5, 194);
     padding: 0 0.5em 0 0.5em;
@@ -162,5 +168,11 @@ a:hover .img_footer {
     text-align: right;
     margin: 0;
   }
-}
+  .footer-menu :hover{
+    background-color: blue;
+    color: white;
+    transition: background-color 1s ease-in;
+  }
+  }
+
 
