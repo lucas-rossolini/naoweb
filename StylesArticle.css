@@ -31,7 +31,6 @@
     padding-right: 50px;
     
     justify-content: center;
-    
 }
 .Partie2txt2{
 
@@ -56,25 +55,39 @@
     
 }
 
-p{
+p.text1{
     width:25vw;
     padding-top: 2vh;
-    padding-left: 5vw;
-    
-    
- 
-
-    
+    padding-left: 5vw;    
+}
+p.texte{
+    width:25vw;
+    padding-top: 2vh;
+    padding-left: 5vw;    
 }
 
-h1.color#contour {
+h1.color.contour.Titre {
 
     margin-bottom: 10vh;
     margin-left: 100px;
+
 }
 
-h2.color{
+h2.color#le1{
+    
+    display: flex;
+    justify-content: flex-start;
     padding-bottom: 5vh;
+    
+ 
+}
+h2.color#le2{
+    
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 5vh;
+    
+ 
 }
 
 
@@ -108,8 +121,13 @@ h2.color{
 
 }
 
-h4 {
+h4.info {
     padding-left: 5vw;
+}
+h4.color.liens {
+    
+        padding-left: 5vw;
+    
 }
 
 .bas {
@@ -119,12 +137,12 @@ h4 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: 5%;
+    padding-top: 1vh;
     gap: 5vh;
 
 }
 
-a { 
+.lienvgrille { 
     
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 700;
@@ -135,21 +153,31 @@ a {
     padding-right: 4vw;
 }
 
+h1.color.logo{
+    position: fixed;
+    font-size: 30px;
+    padding-top: 0px;
+    margin-top: 1vh;
+}
+
+
 @media screen and (max-width: 700px)  { 
     
     .Article1{
    
-        padding-top: 30vh;
+        padding-top: 10vh;
         height: 100vh;
         display: flex;
         flex-direction: column;
         padding-bottom: 10vh;
        
     }
-    h1.color#contour {
+    h1.color.contour.Titre {
 
         margin-bottom: 5vh;
         margin-left: 0px;
+        display: flex;
+        justify-content: center;
        
     }
 
@@ -192,13 +220,7 @@ a {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        align-items: flex-start;
-        
-
-        
-    
-     
-       
+        align-items: flex-start; 
         
     }
     
@@ -233,25 +255,35 @@ a {
         max-width: 100vw;
     }
 
-    p{
+    p.text1{
     
         padding-top: 2vh;
-        padding-bottom: 10vh;
-        width:70vw;
-        
+        padding-bottom: 2vh;
+        width:60vw;
+        padding-left: 7vw;
+        padding-right: 2vw;        
     
+
     }
-    h2.color{
+
+    p.text2{
+    
+        padding-top: 1vh;
+        padding-bottom: 5vh;
+        width:60vw;
+        padding-left: 7vw;
+    }
+    
+    h2.color#le1{
         padding-bottom: 5vh;
         padding-top: 5vh;
         padding-left: 5vw;
         
+        
     }
 
     h2.color#le2{
-        margin-top: 10vh;
-        padding-bottom: 2vh;
-        padding-top: 7vh;
+        padding-bottom: 3vh;
         padding-left: 7vw;
         font-weight: 400;
         font-style: italic;
@@ -261,9 +293,9 @@ a {
        
     }
     .bas{
-        padding-top: 10vh;
+        padding-top: 1vh;
     }
-    a{
+    .lienvgrille{
         font-size: 10px;
         color: blue;
         -webkit-text-stroke: 0px;
@@ -271,6 +303,7 @@ a {
     }
     h4#liens{
         font-size: 10px;
+        flex-wrap: wrap;
     }
  
 }
