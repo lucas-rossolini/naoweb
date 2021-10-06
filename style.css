@@ -611,6 +611,7 @@ h2.color {
   color: white;
   -webkit-text-stroke: 1px blue;
   font-weight: bold;
+  padding-top: 2rem;
 }
 
 .contact-section form{
