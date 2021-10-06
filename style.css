@@ -1,7 +1,6 @@
 html {
   font-size: 62.5%;
   font-family: "IBM Plex Mono", monospace;
-  height: 3000px;
 }
 
 body {
@@ -22,14 +21,22 @@ a {
 }
 
 /*----------------------------------
+        Charte
+----------------------------------*/
+
+/*----------------------------------
+        Fin charte
+----------------------------------*/
+
+/*----------------------------------
         Menu burger
 ----------------------------------*/
 
-input {
+#burger {
   display: none;
 }
 
-label {
+#label-burger {
   position: fixed;
   top: 3rem;
   right: 4rem;
@@ -38,7 +45,7 @@ label {
   z-index: 999;
 }
 
-label span {
+#label-burger span {
   position: absolute;
   width: 100%;
   height: 2px;
@@ -50,30 +57,30 @@ label span {
   transition: 0.5s;
 }
 
-label span:first-child {
+#label-burger span:first-child {
   top: 0;
 }
 
-label span:last-child {
+#label-burger span:last-child {
   top: 2rem;
 }
 
-label:hover {
+#label-burger:hover {
   cursor: pointer;
 }
 
-input:checked + label span {
+input:checked + #label-burger span {
   opacity: 0;
   top: 1rem;
 }
 
-input:checked + label span:first-child {
+input:checked + #label-burger span:first-child {
   opacity: 1;
   background-color: white;
   transform: rotate(405deg);
 }
 
-input:checked + label span:last-child {
+input:checked + #label-burger span:last-child {
   opacity: 1;
   background-color: white;
   transform: rotate(-405deg);
@@ -188,14 +195,14 @@ input:checked ~ #nav-header ul li {
   width: 1%;
   height: 1%;
   position: relative;
-  transform: translateX(2vw) translateY(-5vh);
+  transform: translateX(2vw) translateY(-2vh);
 }
 
 #wrapper-logo-part2 {
   width: 1%;
   height: 1%;
   position: relative;
-  transform: translateX(40vw) translateY(75vh);
+  transform: translateX(40vw) translateY(60vh);
 }
 
 .align {
@@ -213,13 +220,13 @@ input:checked ~ #nav-header ul li {
 .scrolled {
   color: white;
   /* margin-left: 1%; */
-  transform: translate(0vw, -50vh);
+  transform: translate(0vw, -40vh);
 }
 
 .scrolled2 {
   color: #3000ff;
   font-size: 3rem;
-  transform: translate(-10vw, -70vh);
+  transform: translate(-10vw, -60vh);
   opacity: 0;
 }
 
@@ -325,6 +332,36 @@ input:checked ~ #nav-header ul li {
 
 /*----------------------------------
         Fin Présentation
+----------------------------------*/
+
+/*----------------------------------
+        Grille actualités
+----------------------------------*/
+.grille-actu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.grille-container{
+  margin: 1rem;
+}
+
+.titre-grille-actu {
+  text-align: left;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: blue;
+  color: transparent;
+  font-size: 50px;
+  padding: 3rem 2rem;
+}
+
+/*----------------------------------
+        Fin grille actualités
 ----------------------------------*/
 
 /*----------------------------------
@@ -560,4 +597,153 @@ h2.color {
 }
 /*----------------------------------
         Fin grille articles
+----------------------------------*/
+
+/*----------------------------------
+        Contact us
+----------------------------------*/
+
+.contact-section h1{
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  color: white;
+  -webkit-text-stroke: 1px blue;
+  font-weight: bold;
+}
+
+.contact-section form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.contact-section form label{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+  color: blue;
+}
+
+.contact-section form input{
+  height: 40px;
+  width: 320px;
+  border: 2px blue solid;
+  border-radius: 50px;
+  padding-left: 10px;
+}
+
+.contact-section form input:focus{
+  outline: none;
+}
+
+.contact-section form select{
+  height: 46px;
+  width: 336px;
+  border: 2px blue solid;
+  border-radius: 50px;
+  color: blue;
+  -webkit-appearance: none;
+  background: url(./arrow.png) no-repeat right;
+  background-size: 20px;
+  background-position-x: 290px;
+  padding-left: 20px;
+  font-style: italic;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.contact-section form select:focus{
+  outline: none;
+}
+
+.contact-section form option{
+  color: blue;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.contact-section form textarea{
+  height: 120px;
+  width: 312px;
+  border: 2px blue solid;
+  border-radius: 20px;
+  resize: none;
+  padding: 10px;
+}
+
+.contact-section form textarea:focus{
+  outline: none;
+}
+
+.contact-section .button{
+  padding-top: 30px;
+}
+
+.contact-section form button{
+  height: 40px;
+  width: 200px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+@media (min-width: 1200px) {
+  .contact-section{
+    background-color: blue;
+    height: 100vh;
+  }
+
+  .contact-section h1{
+    color: blue;
+    -webkit-text-stroke: 1px white;
+  }
+
+  .contact-section form label{
+    color: white;
+  }
+
+  .contact-section form input{
+    border: 2px white solid;
+    background-color: blue;
+    color: white;
+    width: 1059px;
+  }
+
+  .contact-section form select{
+    border: 2px white solid;
+    background: url(./arrow-white.png) no-repeat right;
+    background-size: 20px;
+    background-position-x: 1029px;
+    color: white;
+    width: 1075px;
+  }
+
+  .contact-section form select option{
+    color: blue;
+  }
+
+  .contact-section form option{
+    color: white;
+  }
+
+  .contact-section form textarea{
+    border: 2px white solid;
+    background-color: blue;
+    color: white;
+    width: 1051px;
+  }
+
+  .contact-section form button{
+    background-color: white;
+    color: blue;
+  }
+}
+
+/*----------------------------------
+        Fin contact us
 ----------------------------------*/
