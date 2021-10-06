@@ -1,13 +1,14 @@
 body {
     margin: 0;
 }
-.text {
+.presentation {
     font-family: "IBM Plex Mono", monospace;
     font-weight: 400;
     color: blue;
     font-size: 20px;
     text-align: left;
     margin-left: 1em;
+    width: 70%;
 }
 h1.color#contour {
     font-family: "IBM Plex Mono", monospace;
@@ -17,6 +18,7 @@ h1.color#contour {
     color: transparent;
     font-size: 50px;
     text-align: center;
+    margin-bottom: 2em;
 }
 
 .carousel-container {
@@ -60,7 +62,11 @@ h2.color {
     max-width: 100%;
 }
 
-#calendrier {
-    margin: 1em;
-}
+.iframe {
+   margin: 1% 2%;
 
+}
+.content{
+
+    width: 70%;
+}
