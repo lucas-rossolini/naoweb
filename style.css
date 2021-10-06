@@ -5,7 +5,7 @@
 -------------------------------------*/
 
 .footer {
-  border-top: solid rgb(48, 12, 177);
+  border-top: solid blue;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,7 +19,7 @@
   -webkit-text-stroke-color: blue;
   color: transparent;
   font-size: 50px;
-  padding-top: 2em;
+  padding-top: 1.5em;
 }
 
 .copy {
@@ -29,9 +29,10 @@
   font-style: italic;
   color: blue;
   font-size: 20px;
+  -webkit-text-stroke: 0;
+  -webkit-text-stroke-color: blue;
 }
 .footer a {
-  margin-top: 1em;
   text-decoration: none;
   display: flex;
   flex-direction: column;
@@ -40,7 +41,10 @@
   font-family: "IBM Plex Mono", monospace;
   font-weight: 600;
   color: blue;
-  font-size: 25px;
+  font-size: 20px;
+}
+.footer-menu {
+  margin-top: 0.5em;
 }
 
 .img_footer {
@@ -71,21 +75,23 @@ a:hover .img_footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 1em;
+    margin: 0em;
   }
   .footer-menu {
     text-decoration: none;
-    color: rgb(47, 8, 187);
+    color: blue;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     margin-right: 1em;
+    margin-top: 0;
+    padding-bottom: 2em;
   }
 
   .logo {
     margin-left: 1em;
-    padding-top: 1em;
+    padding-top: 0em;
   }
 
   .footer a {
@@ -111,11 +117,11 @@ a:hover .img_footer {
     font-style: italic;
     color: blue;
     font-size: 20px;
-    width: 100%;
+    width: 99%;
     text-align: right;
     margin: 0;
   }
-  .footer-menu :hover{
+  .footer-menu :hover {
     background-color: blue;
     color: white;
     transition: background-color 1s ease-in;
@@ -126,23 +132,27 @@ a:hover .img_footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 0;
   }
   .footer-menu {
     text-decoration: none;
-    color: rgb(47, 8, 187);
+    color: blue;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-right: 1em;
+    margin-top: 0;
+    padding-bottom: 2em;
   }
 
   .logo {
-    padding-top: 1em;
+    padding-top: 0em;
   }
 
   .footer a {
     gap: 0.5em;
-    border-right: solid rgb(62, 5, 194);
+    border-right: solid blue;
     padding: 0 0.5em 0 0.5em;
     font-family: "IBM Plex Mono", monospace;
     font-weight: 600;
@@ -163,15 +173,13 @@ a:hover .img_footer {
     font-style: italic;
     color: blue;
     font-size: 20px;
-    width: 100%;
+    width: 99%;
     text-align: right;
     margin: 0;
   }
-  .footer-menu :hover{
+  .footer-menu :hover {
     background-color: blue;
     color: white;
     transition: background-color 1s ease-in;
   }
- 
-
-
+}
