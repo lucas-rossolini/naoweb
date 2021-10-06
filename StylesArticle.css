@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.Article1{
+   
+    width: 100vw;
+    height: 100vh;
+   
+    display: flex;
+    flex-direction: row;
+
+}
+.Article2{
+   
+    width: 100vw;
+    height: 100vh;
+   
+    display: flex;
+    flex-direction: row;
+
+}
+.Partie1txt1 {
+    position: relative;
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15vw;
+    padding-right: 50px;
+    
+    justify-content: center;
+    
+}
+.Partie2txt2{
+
+
+    position: relative;
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    
+    flex-direction: column;
+
+    padding-left: 50px;
+    
+    justify-content: center;
+    
+
+   
+    padding-right: 15vw;
+
+ 
+   
+    
+}
+
+p{
+    width:25vw;
+    padding-top: 2vh;
+    padding-left: 5vw;
+    
+    
+ 
+
+    
+}
+
+h1.color#contour {
+
+    margin-bottom: 10vh;
+    margin-left: 100px;
+}
+
+h2.color{
+    padding-bottom: 5vh;
+}
+
+
+#img1 { 
+    max-width: 50vw;
+}
+#img2{ 
+    max-width: 50vw;
+}
+.Partie1img1 {
+
+    width: 50vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    
+
+}
+.Partie2img2{
+
+    width: 50vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    
+
+}
+
+h4 {
+    padding-left: 5vw;
+}
+
+.bas {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5%;
+    gap: 5vh;
+
+}
+
+a { 
+    
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 700;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: blue;      
+    color:transparent;
+    font-size: 20px;
+    padding-right: 4vw;
+}
+
+@media screen and (max-width: 700px)  { 
+    
+    .Article1{
+   
+        padding-top: 30vh;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10vh;
+       
+    }
+    h1.color#contour {
+
+        margin-bottom: 5vh;
+        margin-left: 0px;
+       
+    }
+
+    .Article2{
+   
+        padding-top: 20vh;
+        padding-bottom: 20vh;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        
+       
+       
+    }
+    
+    .Partie1txt1 {
+
+        
+        width: 100vw;
+        padding-left: 0px;
+        padding-right: 0px;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+     
+        
+        
+    }
+
+    .Partie2txt2{
+
+
+        position: relative;
+        width: 100vw;
+        padding-right: 0px;
+        padding-left: 0px;       
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+
+        
+    
+     
+       
+        
+    }
+    
+    .Partie1img1 {
+
+        width: 100vw;
+
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .Partie2img2{
+
+        width: 100vw;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+       
+    
+    }
+    #img2 { 
+        max-width: 100vw;
+       
+       
+    }
+    #img1 { 
+        max-width: 100vw;
+    }
+
+    p{
+    
+        padding-top: 2vh;
+        padding-bottom: 10vh;
+        width:70vw;
+        
+    
+    }
+    h2.color{
+        padding-bottom: 5vh;
+        padding-top: 5vh;
+        padding-left: 5vw;
+        
+    }
+
+    h2.color#le2{
+        margin-top: 10vh;
+        padding-bottom: 2vh;
+        padding-top: 7vh;
+        padding-left: 7vw;
+        font-weight: 400;
+        font-style: italic;
+        color: blue;
+        font-size: 15px;
+        
+       
+    }
+    .bas{
+        padding-top: 10vh;
+    }
+    a{
+        font-size: 10px;
+        color: blue;
+        -webkit-text-stroke: 0px;
+    
+    }
+    h4#liens{
+        font-size: 10px;
+    }
+ 
+}
