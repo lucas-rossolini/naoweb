@@ -10,7 +10,7 @@
 <body>
   <div class="contact-section">
     <h1>_Contact</h1>
-      <form action="mailto:victor.pagnier@gmail.com" method="post"> <!-- retirer action et method -->
+      <form>
         <div>
             <label for="name">Nom Prénom</label>
             <input type="text" id="name" name="user_name">
@@ -21,11 +21,11 @@
         </div>
         <div>
           <label for="company">Structure</label>
-          <select name="company" id="company-select"> <!-- conflit entre for et id -->
+          <select name="company">
             <option value="event">Événement</option>
-            <option value="define">Offre d'emploi</option> <!-- value à définir -->
-            <option value="define">Coworking</option>
-            <option value="define">Autre</option>
+            <option value="job">Offre d'emploi</option>
+            <option value="coworking">Coworking</option>
+            <option value="other">Autre</option>
         </select>
         </div>
         <div>
