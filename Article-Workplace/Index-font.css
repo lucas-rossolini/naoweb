@@ -1,0 +1,181 @@
+
+/*Police de caractère à mettre en liens dans la <head> du html*/
+
+/*<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">*/
+
+/*  Pour appler la police en css : font-family: 'IBM Plex Mono', monospace; */ 
+
+
+/*////////////////////////
+  <div class="img">
+         <img src="https://picsum.photos/id/684/600/400" alt="">
+   </div>
+Font Noir sans couleur
+////////////////////////*/
+
+/*Ajouter : id="contour"//////////////////////////*/
+
+h1.contour{
+
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 700;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;      
+    color:transparent;
+    font-size: 50px;
+}
+
+/*//////////////////////////////////////////////////*/
+
+h1{
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 700;
+    color: black;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
+    color: black;
+    font-size: 35px;
+}
+
+h3 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
+    color: black;
+    font-size: 25px;
+
+}
+
+p {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
+    color: black;
+    font-size: 15px;
+
+}
+
+h4 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
+    font-style: italic;
+    color: black;
+    font-size: 20px;
+}
+
+/*////////////////////////
+Font coloré sur fond blanc >> Ne pas oublier de mettre la class = "color"
+////////////////////////*/
+
+/*Ajouter : id="contour"//////////////////////////*/
+
+h1.color.contour {
+
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 700;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: blue;      
+    color:transparent;
+    font-size: 50px;
+}
+
+/*//////////////////////////////////////////////////*/
+
+
+h1.color{
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 700;
+    color: blue;
+    font-size: 50px;
+}
+
+h2.color {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
+    color: blue;
+    font-size: 35px;
+}
+
+h3.color {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
+    color: blue;
+    font-size: 25px;
+
+}
+
+p.color {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
+    color: blue;
+    font-size: 20px;
+
+}
+
+h4.color {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
+    font-style: italic;
+    color: blue;
+    font-size: 15px;
+}
+
+/*///////////////////////////
+Font blanche sur fond coloré >> Ne pas oublier de mettre la class = "white"
+///////////////////////////*/
+
+/*Ajouter : id="contour"//////////////////////////*/
+
+h1.white.contour {
+
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 700;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: white;      
+    color:transparent;
+    font-size: 50px;
+}
+/*//////////////////////////////////////////////////*/
+
+h1.white{
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 700;
+    color: white;
+    font-size: 50px;
+}
+
+h2.white {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
+    color: white;
+    font-size: 35px;
+}
+
+h3.white {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
+    color: white;
+    font-size: 25px;
+
+}
+
+p.white {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
+    color: white;
+    font-size: 20px;
+
+}
+
+h4.white {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
+    font-style: italic;
+    color: white;
+    font-size: 20px;
+}
+

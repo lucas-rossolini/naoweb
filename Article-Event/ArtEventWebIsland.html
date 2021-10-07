@@ -10,8 +10,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;0,700;1,400&display=swap"
                 rel="stylesheet">
+
         <link href="StylesArticle.css" rel="stylesheet">
         <link href="stylemenus.css" rel="stylesheet">
+
         <link href="style-footer.css" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,47 +22,30 @@
 </head>
 
 <body>
+
         <header>
 
-                <h2 id="logo-nav" class="color">Nao_web</h1>
-                        <input id="burger" type="checkbox" />
 
-                        <label for="burger">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                        </label>
-
-                        <nav id="nav-header">
-                                <ul>
-                                        <li><a href="#">_Événements</a></li>
-                                        <li><a href="#">_Espaces de travail</a></li>
-                                        <li><a href="#">_Se loger</a></li>
-                                        <li><a href="#">_Se restaurer</a></li>
-                                        <li><a href="#">_Contact</a></li>
-                                </ul>
-                        </nav>
         </header>
+
 
 
         <section class="Article1">
 
                 <section class="Partie1img1">
-                        <h1 class="color" id="contour">_Évènement</h1>
-                        <img id="img1" src="img/WebIslandart1.jpg" alt="conference-presentation">
+                        <h1 class="color contour Titre">_Évènement</h1>
+                        <img id="img1" src="img/WebIslandart1.jpg" alt="">
                 </section>
 
                 <section class="Partie1txt1">
 
-                        <h2 class="color">_WebIsland</h2>
-                        <h4 class="color">_Nantes / 3 avril 2022</h4>
-
-                        <p>Webisland ce n'est pas... une demi-jauge où votre voisin est une chaise vide, où vous devez
+                        <h2 class="color" id="le1">_WebIsland</h2>
+                        <h4 class="color info">_Nantes / 3 avril 2022</h4>
+                        <p class="text1">Webisland ce n'est pas... une demi-jauge où votre voisin est une chaise vide,
+                                où vous devez
                                 manger dehors le midi sans vos nouvelles rencontres du jour, où nous ne pouvons pas vous
                                 proposer de buffet petit-déjeuner, où l'after se limite à une coupette de bulles et tout
-                                le monde est parti à 19h...
-
-                        </p>
+                                le monde est parti à 19h...</p>
                 </section>
 
 
@@ -73,25 +58,24 @@
 
                         <h2 class="color" id="le2">_WebIsland</h2>
 
-                        <p>Webisland c'est... le networking, les rires sans masque, les selfies de groupe, le buffet
+                        <p class="text2">Webisland c'est... le networking, les rires sans masque, les selfies de groupe,
+                                le buffet
                                 super bon, le bruit des verres qui s'entrechoquent, les ateliers en petits groupes, les
                                 applaudissement d'une salle pleine, les stands de sponsors joyeux et bruyants... Bref,
                                 vous l'aurez compris, avec nous, c'est tout ou rien !
-
-
                         </p>
                 </section>
 
                 <section class="Partie2img2">
-                        <img id="img2" src="img/WebIslandart2.jpg" alt="conference-public">
+                        <img id="img2" src="img/WebIslandart2.jpg" alt="">
 
                 </section>
 
 
         </section>
         <section class="bas">
-                <h4 class="color" id="liens">Pour plus d'information rdv sur : webisland.io </h4>
-                <a href="#">Voir les autres article ></a>
+                <h4 class="color liens">Pour plus d'information rdv sur : le nom du site </h4>
+                <a class="lienvgrille" href="#"> Voir les autres article ></a>
         </section>
         <footer id="footer_top">
                 <section id="footer" class="footer">
@@ -100,23 +84,26 @@
                                 <p class="copy">Nao_Web &copy; 2021</p>
                         </div>
                         <div class="footer-menu">
-                                <a class="link_footer" href="#"><img class="img_footer" src="icone/home.svg"
+                                <a class="link_footer" href="../index.html"><img class="img_footer" src="icone/home.svg"
                                                 title="HOME" alt="HOME" />_Home</a>
 
-                                <a class="link_footer" href="#"><img class="img_footer" src="icone/calendar.svg"
-                                                title="EVENTS" alt="EVENTS" />_Evénements</a>
+                                <a class="link_footer" href="../pages/evenements.html"><img class="img_footer"
+                                                src="icone/calendar.svg" title="EVENTS"
+                                                alt="Événements" />_Événements</a>
 
-                                <a class="link_footer" href="#"><img class="img_footer" src="icone/computer (1).svg "
-                                                title="COWORKING" alt="Lieu" />_Lieu</a>
+                                <a class="link_footer" href="../pages/workplace.html"><img class="img_footer"
+                                                src="icone/computer (1).svg " title="Workplace"
+                                                alt="Workplace" />_Workplace</a>
 
-                                <a class="link_footer" href="#"><img class="img_footer" src="icone/briefcase (1).svg"
-                                                title="JOB" alt="JOB" />_Offre</a>
+                                <a class="link_footer" href="../pages/jobs.html"><img class="img_footer"
+                                                src="icone/briefcase (1).svg" title="JOB" alt="JOB" />_Jobs</a>
 
-                                <a class="link_footer" href="#"><img class="img_footer" src="icone/envelope.svg"
-                                                title="CONTACT" alt="CONTACT" />_Contact</a>
+                                <a class="link_footer" href="../pages/contact.html"><img class="img_footer"
+                                                src="icone/envelope.svg" title="CONTACT" alt="CONTACT" />_Contact</a>
                         </div>
                 </section>
         </footer>
+
 
         <script src="scriptmenus.js" type="text/javascript">
                 const newP = document.createElement("p");
