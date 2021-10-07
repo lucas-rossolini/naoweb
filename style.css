@@ -1,0 +1,1045 @@
+html {
+  font-size: 62.5%;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+h1,
+h2,
+h4 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+iframe {
+  z-index: 10;
+  position: relative;
+}
+/*----------------------------------
+        Charte
+----------------------------------*/
+h1.contour {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: black;
+  color: transparent;
+  font-size: 50px;
+}
+
+/*//////////////////////////////////////////////////*/
+
+p {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  color: black;
+  font-size: 15px;
+}
+
+/*////////////////////////
+Font coloré sur fond blanc >> Ne pas oublier de mettre la class = "color"
+////////////////////////*/
+
+/*Ajouter : id="contour"//////////////////////////*/
+
+h1.color.contour {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: blue;
+  color: transparent;
+  font-size: 50px;
+}
+
+/*//////////////////////////////////////////////////*/
+
+h1.color {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+  color: blue;
+  font-size: 50px;
+}
+
+h2.color {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  color: blue;
+  font-size: 35px;
+}
+
+h3.color {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  color: blue;
+  font-size: 25px;
+}
+
+p.color {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  color: blue;
+  font-size: 20px;
+}
+
+h4.color {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+  color: blue;
+  font-size: 15px;
+}
+
+/*///////////////////////////
+Font blanche sur fond coloré >> Ne pas oublier de mettre la class = "white"
+///////////////////////////*/
+
+/*Ajouter : id="contour"//////////////////////////*/
+
+h1.white.contour {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: white;
+  color: transparent;
+  font-size: 50px;
+}
+/*//////////////////////////////////////////////////*/
+
+h1.white {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+  color: white;
+  font-size: 50px;
+}
+
+h2.white {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  color: white;
+  font-size: 35px;
+}
+
+h3.white {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  color: white;
+  font-size: 25px;
+}
+
+p.white {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  color: white;
+  font-size: 20px;
+}
+
+h4.white {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+  color: white;
+  font-size: 20px;
+}
+/*----------------------------------
+        Fin charte
+----------------------------------*/
+
+/*----------------------------------
+        Menu burger
+----------------------------------*/
+
+#burger {
+  display: none;
+}
+
+#label-burger {
+  position: fixed;
+  top: 3rem;
+  right: 4rem;
+  height: 2rem;
+  width: 2.5rem;
+  z-index: 999;
+}
+
+#label-burger span {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 1rem;
+  margin-top: -1px;
+  left: 0;
+  display: block;
+  background-color: blue;
+  transition: 0.5s;
+}
+
+#label-burger span:first-child {
+  top: 0;
+}
+
+#label-burger span:last-child {
+  top: 2rem;
+}
+
+#label-burger:hover {
+  cursor: pointer;
+}
+
+input:checked + #label-burger span {
+  opacity: 0;
+  top: 1rem;
+}
+
+input:checked + #label-burger span:first-child {
+  opacity: 1;
+  background-color: white;
+  transform: rotate(405deg);
+}
+
+input:checked + #label-burger span:last-child {
+  opacity: 1;
+  background-color: white;
+  transform: rotate(-405deg);
+}
+
+.white {
+  background-color: white;
+}
+
+#nav-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-color: blue;
+  z-index: 900;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+  overflow: hidden;
+}
+
+#nav-header ul {
+  text-align: right;
+  position: absolute;
+  top: 20rem;
+  right: 3.5rem;
+  list-style-type: none;
+  color: white;
+}
+
+#nav-header ul li {
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+
+#nav-header ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+  display: block;
+  padding: 1.5rem;
+  font-size: 2rem;
+}
+
+input:checked ~ #nav-header {
+  height: 100%;
+  transition-delay: 0s;
+}
+
+input:checked ~ #nav-header ul li {
+  opacity: 1;
+  transition-delay: 0.5s;
+}
+
+#nav-header a:hover {
+  text-decoration: underline;
+}
+
+.header {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.header-fixe {
+  opacity: 1;
+  position: fixed;
+  background-color: #fff;
+  width: 100vw;
+  height: 8rem;
+  z-index: 99;
+}
+
+.header-fixe-top {
+  opacity: 1;
+  position: fixed;
+  width: 100vw;
+  height: 8rem;
+  background-color: #fff;
+}
+
+/*----------------------------------
+        Fin menu burger
+----------------------------------*/
+
+/*----------------------------------
+        Accueil
+----------------------------------*/
+
+#accueil {
+  height: 100vh;
+  background-image: url(./images/image-accueil.png);
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+#logo-nav {
+  position: fixed;
+  height: 100vh;
+  z-index: 600;
+  font-size: 20vw;
+  font-weight: 400;
+  color: blue;
+}
+
+#logo-nav-header {
+  position: fixed;
+  top: 0;
+  z-index: 600;
+  font-size: 20vw;
+  font-weight: 400;
+  color: blue;
+  background-color: #fff;
+  /* width: 100vw; */
+}
+
+#logo-part1 {
+  position: fixed;
+  width: 100%;
+  /* top: -18vh; */
+  transition: transform 0.6s, font-size 0.8s, color 1s, opacity 0.6s;
+}
+
+#logo-part2 {
+  position: fixed;
+  width: 100%;
+  transition: transform 0.6s, font-size 0.8s, color 1s, opacity 0.6s;
+}
+
+#wrapper-logo-part1 {
+  width: 1%;
+  height: 1%;
+  position: relative;
+  transform: translateX(2vw) translateY(-2vh);
+}
+
+#wrapper-logo-part2 {
+  width: 1%;
+  height: 1%;
+  position: relative;
+  transform: translateX(40vw) translateY(60vh);
+}
+
+.align {
+  color: white;
+  transform: translate(0rem, 0rem);
+}
+
+.align2 {
+  color: #3000ff;
+  transform: translate(0vw, 5vh);
+  font-size: 3rem;
+  opacity: 0;
+}
+
+.scrolled {
+  color: white;
+  /* margin-left: 1%; */
+  transform: translate(0vw, -40vh);
+}
+
+.scrolled2 {
+  color: #3000ff;
+  font-size: 3rem;
+  transform: translate(-10vw, -60vh);
+  opacity: 0;
+}
+
+.logo-header {
+  color: #3000ff;
+  font-size: 2rem;
+  opacity: 0;
+  left: 3rem;
+  transition: opacity 0.8s;
+  /* transition-delay: .4s; */
+}
+
+#logo {
+  padding: 1rem 0 2rem 3rem;
+}
+
+.logo-header-scrolled {
+  opacity: 1;
+  z-index: 500;
+}
+
+#scroll-element {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  top: 100vh;
+  left: 25rem;
+}
+#scroll-element2 {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  top: 205vh;
+  left: 25rem;
+}
+
+.in-view {
+  background-color: white;
+}
+
+@media screen and (min-width: 992px) {
+  #accueil {
+    height: 100vh;
+    background-image: url('./images/Image-accueil.png');
+    background-repeat: repeat;
+  }
+
+  #logo-nav {
+    font-size: 12vw;
+    font-weight: 400;
+  }
+
+  #wrapper-logo-part1 {
+    transform: translateX(10vw) translateY(1vh);
+  }
+
+  #wrapper-logo-part2 {
+    transform: translateX(50vw) translateY(40vh);
+  }
+
+  .scrolled {
+    transform: translate(-40vw, 0vh);
+  }
+}
+
+/*----------------------------------
+        Fin accueil
+----------------------------------*/
+
+/*----------------------------------
+        Présentation
+----------------------------------*/
+#presentation {
+  background-color: #3000ff;
+  margin: 0;
+  color: white;
+  padding-bottom: 3rem;
+}
+
+#titre-presentation {
+  padding: 40rem 0 5rem 3rem;
+  font-size: 3rem;
+}
+
+#text-presentation {
+  padding-left: 10rem;
+  padding-right: 3rem;
+  color: #FFF;
+}
+
+@media screen and (min-width: 992px) {
+  #presentation {
+    height: 100vh;
+  }
+
+  #titre-presentation {
+    padding: 20rem 0 5rem 80rem;
+  }
+
+  #text-presentation {
+    padding-left: 85rem;
+    padding-right: 5rem;
+  }
+}
+
+/*----------------------------------
+        Fin Présentation
+----------------------------------*/
+
+/*----------------------------------
+        Grille actualités
+----------------------------------*/
+.grille-actu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.grille-container {
+  margin: 1rem;
+}
+
+.titre-grille-actu {
+  text-align: left;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: blue;
+  color: transparent;
+  font-size: 50px;
+  padding: 3rem 2rem;
+}
+
+.actualites-grid {
+  margin: 0 1rem;
+}
+
+@media screen and (min-width: 992px){
+  .grille-actu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+  }
+}
+
+/*----------------------------------
+        Fin grille actualités
+----------------------------------*/
+
+/*----------------------------------
+        Footer
+----------------------------------*/
+
+.footer {
+  border-top: solid blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1em;
+}
+.logo {
+  text-align: left;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: blue;
+  color: transparent;
+  font-size: 50px;
+  padding-top: 1.5em;
+}
+
+.copy {
+  text-align: left;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+  color: blue;
+  font-size: 20px;
+  -webkit-text-stroke: 0;
+  -webkit-text-stroke-color: blue;
+}
+.footer a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  color: blue;
+  font-size: 20px;
+}
+.footer-menu {
+  margin-top: 0.5em;
+}
+
+.img_footer {
+  width: 30px;
+  height: 30px;
+}
+
+@keyframes icon {
+  0% {
+    transform: rotate(-360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+a:hover .img_footer {
+  transform: rotate(360deg) scale(1.2);
+  transition: all 1s ease-in-out;
+}
+
+.copyDesk {
+  display: none;
+}
+
+@media only screen and (min-width: 1050px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0em;
+  }
+  .footer-menu {
+    text-decoration: none;
+    color: blue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1em;
+    margin-top: 0;
+    padding-bottom: 2em;
+  }
+
+  .logo {
+    margin-left: 1em;
+    padding-top: 0em;
+  }
+
+  .footer a {
+    gap: 0.5em;
+    border-right: solid rgb(62, 5, 194);
+    padding: 0 1em 0 1em;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
+    color: blue;
+    font-size: 25px;
+  }
+
+  .img_footer {
+    display: none;
+  }
+  .copy {
+    display: none;
+  }
+  .copyDesk {
+    display: inline-block;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
+    color: blue;
+    font-size: 20px;
+    width: 99%;
+    text-align: right;
+    margin: 0;
+  }
+  .footer-menu :hover {
+    background-color: blue;
+    color: white;
+    transition: background-color 1s ease-in;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1050px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+  }
+  .footer-menu {
+    text-decoration: none;
+    color: blue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1em;
+    margin-top: 0;
+    padding-bottom: 2em;
+  }
+
+  .logo {
+    padding-top: 0em;
+  }
+
+  .footer a {
+    gap: 0.5em;
+    border-right: solid blue;
+    padding: 0 0.5em 0 0.5em;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
+    color: blue;
+    font-size: 20px;
+  }
+
+  .img_footer {
+    display: none;
+  }
+  .copy {
+    display: none;
+  }
+  .copyDesk {
+    display: inline-block;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
+    color: blue;
+    font-size: 20px;
+    width: 99%;
+    text-align: right;
+    margin: 0;
+  }
+  .footer-menu :hover {
+    background-color: blue;
+    color: white;
+    transition: background-color 1s ease-in;
+  }
+}
+
+/*----------------------------------
+        Fin footer
+----------------------------------*/
+
+/*----------------------------------
+        Grille Articles
+----------------------------------*/
+.grille-container .content {
+  font-family: "IBM Plex Mono", monospace;
+  /* font-weight: 400; */
+  /* color: blue; */
+  /* font-size: 20px; */
+  text-align: left;
+  /* margin-left: 1em; */
+  width: 80%;
+  height: 12rem;
+}
+h1.color#contour {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: blue;
+  color: transparent;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.carousel-container {
+  margin: 1em;
+  text-align: center;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  color: black;
+  font-size: 20px;
+  text-align: left;
+}
+
+.carousels {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+}
+h2.color {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  color: blue;
+  font-size: 35px;
+  text-align: center;
+}
+
+.button {
+  margin-left: 50%;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  color: black;
+  font-size: 20px;
+}
+
+.button:hover {
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+}
+.img_event {
+  height: 29rem;
+  /* width: 39rem; */
+}
+/*----------------------------------
+        Fin grille articles
+----------------------------------*/
+
+/*----------------------------------
+        Contact us
+----------------------------------*/
+
+.contact-section h1 {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  color: white;
+  -webkit-text-stroke: 1px blue;
+  font-weight: bold;
+  padding-top: 10rem;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.contact-section form label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+  color: blue;
+}
+
+.contact-section form input {
+  height: 40px;
+  width: 320px;
+  border: 2px blue solid;
+  border-radius: 50px;
+  padding-left: 10px;
+}
+
+.contact-section form input:focus {
+  outline: none;
+}
+
+.contact-section form select {
+  height: 46px;
+  width: 336px;
+  border: 2px blue solid;
+  border-radius: 50px;
+  color: blue;
+  -webkit-appearance: none;
+  background: url(../icones/arrow.png) no-repeat right;
+  background-size: 20px;
+  background-position-x: 290px;
+  padding-left: 20px;
+  font-style: italic;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.contact-section form select:focus {
+  outline: none;
+}
+
+.contact-section form option {
+  color: blue;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.contact-section form textarea {
+  height: 120px;
+  width: 312px;
+  border: 2px blue solid;
+  border-radius: 20px;
+  resize: none;
+  padding: 10px;
+}
+
+.contact-section form textarea:focus {
+  outline: none;
+}
+
+.contact-section .button {
+  padding-top: 30px;
+}
+
+.contact-section form button {
+  height: 40px;
+  width: 200px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+@media (min-width: 1200px) {
+  .contact-section {
+    background-color: blue;
+    height: 100vh;
+  }
+
+  .contact-section h1 {
+    color: blue;
+    -webkit-text-stroke: 1px white;
+  }
+
+  .contact-section form label {
+    color: white;
+  }
+
+  .contact-section form input {
+    border: 2px white solid;
+    background-color: blue;
+    color: white;
+    width: 1059px;
+  }
+
+  .contact-section form select {
+    border: 2px white solid;
+    background: url(../icones/arrow-white.png) no-repeat right;
+    background-size: 20px;
+    background-position-x: 1029px;
+    color: white;
+    width: 1075px;
+  }
+
+  .contact-section form select option {
+    color: blue;
+  }
+
+  .contact-section form option {
+    color: white;
+  }
+
+  .contact-section form textarea {
+    border: 2px white solid;
+    background-color: blue;
+    color: white;
+    width: 1051px;
+  }
+
+  .contact-section form button {
+    background-color: white;
+    color: blue;
+  }
+}
+
+/*----------------------------------
+        Fin contact us
+----------------------------------*/
+
+/*----------------------------------
+        Map
+----------------------------------*/
+#map {
+  background-color: #3000ff;
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+  margin-top: 2rem;
+  z-index: -10;
+}
+/*----------------------------------
+        Fin map
+----------------------------------*/
+
+/*----------------------------------
+        Jobs
+----------------------------------*/
+.jobs-section {
+  padding-top: 10rem;
+}
+
+#titre-jobs{
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  color: white;
+  -webkit-text-stroke: 1px blue;
+  font-weight: bold;
+}
+
+.jobs{
+  display: flex;
+  flex-direction: column;
+  background-color: blue;
+  color: white;
+  height: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 20px;
+}
+
+.jobs p{
+  font-size: 12px;
+}
+
+.jobs h2{
+  margin: 0;
+  font-size: 32px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.jobs h3{
+  margin: 0;
+  font-weight: lighter;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.salary{
+  align-self: flex-end;
+}
+
+.job-apply{
+  padding-left: 140px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.job-apply p{
+  margin: 0;
+  color: blue;
+  font-weight: bold;
+  font-size: 12px;
+  display: flex;
+  justify-content: start;
+}
+
+@media (min-width: 1200px) {
+  .jobs{
+    width: 90%;
+    height: 90%;
+  }
+
+  .box-jobs{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    gap: 10%;
+    grid-template-rows: auto auto;
+    height: 100%;
+  }
+
+  .jobs p{
+    font-size: 18px;
+    padding-right: 20%;
+  }
+
+  .job-apply{
+    padding-left: 3%;
+  }
+
+  .salary{
+    padding-right: 10%;
+  }
+}
+
+/*----------------------------------
+        Fin jobs
+----------------------------------*/

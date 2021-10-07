@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+</html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <title>Naoweb</title>
+</head>
+
+<body>
+  <header>
+    <!-- <h1 id="logo-nav">Naoweb</h1> -->
+    <div class="header"></div>
+    <input id="burger" type="checkbox" />
+    <label id="label-burger" for="burger">
+      <span id="burger-top"></span>
+      <span id="burger-middle"></span>
+      <span id="burger-bottom"></span>
+    </label>
+
+    <nav id="nav-header">
+      <ul>
+        <li><a href="pages/evenements.html">_Événements</a></li>
+        <li><a href="pages/workplace.html">_Workplace</a></li>
+        <li><a href="pages/jobs.html">_Jobs</a></li>
+        <li><a href="pages/contact.html">_Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="accueil">
+    <div id="logo-nav">
+      <div id="wrapper-logo-part1">
+        <h1 id="logo-part1">Nao_</h1>
+      </div>
+      <div id="wrapper-logo-part2">
+        <h1 id="logo-part2">Web</h1>
+      </div>
+      <div id="logo" class="logo-header">
+        <a href="index.html">
+          <h1>Nao_Web</h1>
+        </a>
+      </div>
+    </div>
+    <div id="scroll-animation-wrapper" class="container in-view">
+      <div id="scroll-element"></div>
+      <div id="scroll-element2"></div>
+
+  </section>
+
+  <section id="presentation">
+    <h2 id="titre-presentation">_Présentation</h2>
+    <p id="text-presentation">
+      Bienvenue sur Nao_Web ! <br>
+      Vous trouverez ici toutes les infos récentes concernant le domaines de la tech sur la métropole de Nantes.
+      Investisseurs, entrepreneurs, travailleurs, vous êtes au bon endroit ! <br>
+      Ici, 3 grandes catégories : Les évéments tech sur la métropole, les offres d'emploi dans la région nantaise et les
+      espaces de coworking.
+    </p>
+  </section>
+
+  <section class="actualites-grid">
+    <div class="container">
+      <h1 class="titre-grille-actu">_Actualités</h1>
+    </div>
+
+    <div class="grille-actu">
+      <div class="grille-container">
+        <div class="image">
+          <div class="carousel-decoration"></div>
+          <div class="image-bg-container">
+            <img class="img_event" src="../images/Web2Dayart1.png" alt="" />
+          </div>
+        </div>
+        <div class="title">
+          Web2Day
+          <span>
+            / Les machines de l’île<br />
+          </span>
+        </div>
+        <div class="sep"></div>
+        <div class="date">21-22-23 juin 2022</div>
+        <div class="content">
+          <p>
+            Humain, vibrant et intense. Le Web2day, c’est le festival des professionnels·les et des passionnés·es des
+            nouvelles technos qui ont envie de s’inspirer, apprendre et networker dans une bonne ambiance.
+          </p>
+        </div>
+        <div class="web-site">
+          <a class="button" href="*******">En savoir +</a>
+        </div>
+      </div>
+
+      <div class="grille-container">
+        <div class="image">
+          <div class="carousel-decoration"></div>
+          <div class="image-bg-container">
+            <img class="img_event" src="../images/cantineNumart2.png" alt="" />
+          </div>
+        </div>
+        <div class="title">
+          La cantine du numérique
+          <span>
+            / bâtiment Unik sur l’Ile de Nante<br />
+          </span>
+        </div>
+        <div class="sep"></div>
+        <div class="date">Ouvert du lundi au vendredi de 9h à 18h30</div>
+        <div class="content">
+          <p>
+            A la fois une association à l’origine d’un réseau, un espace de bureaux et d’animation, la Cantine de Nantes
+            est devenue un lieu incontournable pour les acteurs du web et de l’innovation numérique.
+          </p>
+        </div>
+        <div class="web-site">
+          <a class="button" href="*******">En savoir +</a>
+        </div>
+      </div>
+
+      <div class="grille-container">
+        <div class="image">
+          <div class="carousel-decoration"></div>
+          <div class="image-bg-container">
+            <img class="img_event" src="../images/offreEmploi.png" alt="" />
+          </div>
+        </div>
+        <div class="title">
+          Développeur Back-end
+          <span>
+            / Lenglow<br />
+          </span>
+        </div>
+        <div class="sep"></div>
+        <div class="date">Nantes</div>
+        <div class="content">
+          <p>
+            Cdi pour les personnes qui ont un niveau d’étude supérieur bac + 3
+          </p>
+        </div>
+        <div class="web-site">
+          <a class="button" href="*******">En savoir +</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="map">
+    <div class="mapou">
+      <div class="gmap_canv"><iframe width="775" height="500" id="gmap_canvas"
+          src="https://maps.google.com/maps?q=coworking%20Nantes&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+          scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        <style>
+          .mapouter {
+            position: relative;
+            text-align: right;
+            height: 500px;
+            width: 775px;
+          }
+
+          .gmap_canvas {
+            overflow: hidden;
+            background: none !important;
+            height: 500px;
+            width: 775px;
+          }
+        </style>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer_top">
+    <section id="footer" class="footer">
+      <div class="logo">
+        NAO_<br />WEB
+        <p class="copy">Nao_Web &copy; 2021</p>
+      </div>
+      <div class="footer-menu">
+        <a class="link_footer" href="#"><img class="img_footer" src="icone/home.svg" title="HOME" alt="HOME" />_Home</a>
+
+        <a class="link_footer" href="#"><img class="img_footer" src="icone/calendar.svg" title="EVENTS"
+            alt="EVENTS" />_Evénements</a>
+
+        <a class="link_footer" href="#"><img class="img_footer" src="icone/computer (1).svg " title="COWORKING"
+            alt="Lieu" />_Lieu</a>
+
+        <a class="link_footer" href="#"><img class="img_footer" src="icone/briefcase (1).svg" title="JOB"
+            alt="JOB" />_Offre</a>
+
+        <a class="link_footer" href="pages/contact.html"><img class="img_footer" src="icone/envelope.svg"
+            title="CONTACT" alt="CONTACT" />_Contact</a>
+      </div>
+    </section>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
