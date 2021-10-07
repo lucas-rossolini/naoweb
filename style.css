@@ -77,7 +77,17 @@ h2.color {
   .dot {
     display: none;
   }
+
+  .calendrier img{
+    margin: 2em 10%;
+    
+  }
+  .calendrier{
+    display: flex;
+    flex-direction: row;
+  }
 }
+
 
 /*--------------------
    slideshow
@@ -237,6 +247,7 @@ a:hover .img_footer {
   display: none;
 }
 
+
 @media only screen and (min-width: 1050px) {
   .footer {
     display: flex;
@@ -296,7 +307,11 @@ a:hover .img_footer {
   .dots {
     display: none;
   }
+  span{
+    font-size: 15px;
+  }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 1050px) {
   .footer {
     display: flex;
@@ -354,5 +369,8 @@ a:hover .img_footer {
   }
   .dots {
     display: none;
+  }
+  span{
+    font-size: 15px;
   }
 }
