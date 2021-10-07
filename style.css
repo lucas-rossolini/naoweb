@@ -299,7 +299,7 @@ input:checked ~ #nav-header ul li {
 
 #accueil {
   height: 100vh;
-  background-image: url("./images/Image-accueil.png");
+  background-image: url("../images/Image-accueil.png");
   background-repeat: no-repeat;
   margin: 0;
 }
@@ -416,7 +416,7 @@ input:checked ~ #nav-header ul li {
 @media screen and (min-width: 992px) {
   #accueil {
     height: 100vh;
-    background-image: url("./images/Image-accueil.png");
+    background-image: url("../images/Image-accueil.png");
     background-repeat: repeat;
   }
 
