@@ -286,6 +286,7 @@ input:checked ~ #nav-header ul li {
   width: 100vw;
   height: 8rem;
   background-color: #fff;
+  z-index: 10;
 }
 
 /*----------------------------------
@@ -298,7 +299,7 @@ input:checked ~ #nav-header ul li {
 
 #accueil {
   height: 100vh;
-  background-image: url(./images/image-accueil.png);
+  background-image: url("./images/image-accueil.png");
   background-repeat: no-repeat;
   margin: 0;
 }
@@ -415,7 +416,7 @@ input:checked ~ #nav-header ul li {
 @media screen and (min-width: 992px) {
   #accueil {
     height: 100vh;
-    background-image: url('./images/Image-accueil.png');
+    background-image: url("./images/Image-accueil.png");
     background-repeat: repeat;
   }
 
@@ -448,7 +449,7 @@ input:checked ~ #nav-header ul li {
   background-color: #3000ff;
   margin: 0;
   color: white;
-  padding-bottom: 3rem;
+  padding-bottom: 3rem; 
 }
 
 #titre-presentation {
@@ -459,7 +460,39 @@ input:checked ~ #nav-header ul li {
 #text-presentation {
   padding-left: 10rem;
   padding-right: 3rem;
-  color: #FFF;
+  color: #fff;
+}
+
+.bouton_contacter {
+  position: relative;
+  z-index: 3;
+  margin-left: 5rem;
+}
+
+.bouton_contacter a:before,
+.bouton_contacter a:after {
+  display: block;
+  position: absolute;
+  bottom: 0.6rem;
+  right: 110%;
+  width: 5px;
+  height: 1px;
+  background: #fff;
+  content: "";
+  -moz-transition: width 0.2s ease;
+  -o-transition: width 0.2s ease;
+  -webkit-transition: width 0.2s ease;
+  transition: width 0.2s ease;
+}
+
+.bouton_contacter a:after {
+  left: 110%;
+  right: auto;
+}
+
+.bouton_contacter a:hover:before,
+.bouton_contacter a:hover:after {
+  width: 20px;
 }
 
 @media screen and (min-width: 992px) {
@@ -511,7 +544,7 @@ input:checked ~ #nav-header ul li {
   margin: 0 1rem;
 }
 
-@media screen and (min-width: 992px){
+@media screen and (min-width: 992px) {
   .grille-actu {
     display: flex;
     flex-direction: row;
@@ -723,8 +756,8 @@ a:hover .img_footer {
   /* font-size: 20px; */
   text-align: left;
   /* margin-left: 1em; */
-  width: 80%;
-  height: 12rem;
+  /* width: 80%; */
+  /* height: 12rem; */
 }
 h1.color#contour {
   font-family: "IBM Plex Mono", monospace;
@@ -761,22 +794,36 @@ h2.color {
   text-align: center;
 }
 
-.button {
-  margin-left: 50%;
+.web-site .button {
+  /* margin-left: 50%; */
   font-family: "IBM Plex Mono", monospace;
   font-weight: 400;
   color: black;
   font-size: 20px;
 }
 
-.button:hover {
+.web-site .button:hover {
   background-color: blue;
   color: white;
   border-radius: 5px;
 }
 .img_event {
-  height: 29rem;
+  height: 20rem;
+  margin-top: 3rem;
   /* width: 39rem; */
+}
+
+@media screen and (min-width: 992px) {
+  .img_event {
+    height: 29rem;
+    margin-top: 0;
+  }
+  .web-site .button {
+    margin-left: 50%;
+  }
+  .grille-container .content {
+    height: 12rem;
+  }
 }
 /*----------------------------------
         Fin grille articles
@@ -832,7 +879,7 @@ h2.color {
   border-radius: 50px;
   color: blue;
   -webkit-appearance: none;
-  background: url(../icones/arrow.png) no-repeat right;
+  background: url("../icone/arrow.png") no-repeat right;
   background-size: 20px;
   background-position-x: 290px;
   padding-left: 20px;
@@ -900,7 +947,7 @@ h2.color {
 
   .contact-section form select {
     border: 2px white solid;
-    background: url(../icones/arrow-white.png) no-repeat right;
+    background: url("./icone/arrow-white.png") no-repeat right;
     background-size: 20px;
     background-position-x: 1029px;
     color: white;
@@ -943,6 +990,11 @@ h2.color {
   margin-top: 2rem;
   z-index: -10;
 }
+
+#gmap_canvas {
+  width: 80vw;
+  height: 70vh;
+}
 /*----------------------------------
         Fin map
 ----------------------------------*/
@@ -954,7 +1006,7 @@ h2.color {
   padding-top: 10rem;
 }
 
-#titre-jobs{
+#titre-jobs {
   list-style-type: none;
   display: flex;
   justify-content: center;
@@ -964,7 +1016,7 @@ h2.color {
   font-weight: bold;
 }
 
-.jobs{
+.jobs {
   display: flex;
   flex-direction: column;
   background-color: blue;
@@ -975,35 +1027,35 @@ h2.color {
   padding: 20px;
 }
 
-.jobs p{
+.jobs p {
   font-size: 12px;
 }
 
-.jobs h2{
+.jobs h2 {
   margin: 0;
   font-size: 32px;
   font-weight: 600;
   padding-bottom: 10px;
 }
 
-.jobs h3{
+.jobs h3 {
   margin: 0;
   font-weight: lighter;
   font-size: 20px;
   padding-bottom: 10px;
 }
 
-.salary{
+.salary {
   align-self: flex-end;
 }
 
-.job-apply{
+.job-apply {
   padding-left: 140px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.job-apply p{
+.job-apply p {
   margin: 0;
   color: blue;
   font-weight: bold;
@@ -1013,12 +1065,12 @@ h2.color {
 }
 
 @media (min-width: 1200px) {
-  .jobs{
+  .jobs {
     width: 90%;
     height: 90%;
   }
 
-  .box-jobs{
+  .box-jobs {
     display: grid;
     grid-template-columns: 45% 45%;
     gap: 10%;
@@ -1026,20 +1078,267 @@ h2.color {
     height: 100%;
   }
 
-  .jobs p{
+  .jobs p {
     font-size: 18px;
     padding-right: 20%;
   }
 
-  .job-apply{
+  .job-apply {
     padding-left: 3%;
   }
 
-  .salary{
+  .salary {
     padding-right: 10%;
   }
 }
 
 /*----------------------------------
         Fin jobs
+----------------------------------*/
+
+/*----------------------------------
+           Début Articles
+----------------------------------*/
+.Article1 {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: row;
+}
+.Article2 {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: row;
+}
+.Partie1txt1 {
+  position: relative;
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-left: 15vw;
+  padding-right: 50px;
+
+  justify-content: center;
+}
+.Partie2txt2 {
+  position: relative;
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+
+  flex-direction: column;
+
+  padding-left: 50px;
+
+  justify-content: center;
+
+  padding-right: 15vw;
+}
+
+p.text1 {
+  width: 25vw;
+  padding-top: 2vh;
+  padding-left: 5vw;
+}
+p.texte {
+  width: 25vw;
+  padding-top: 2vh;
+  padding-left: 5vw;
+}
+
+h1.color.contour.Titre {
+
+  padding-top: 15rem;
+  margin-bottom: 10vh;
+  margin-left: 100px;
+}
+
+h2.color#le1 {
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 5vh;
+}
+h2.color#le2 {
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 5vh;
+}
+
+#img1 {
+  max-width: 50vw;
+}
+#img2 {
+  max-width: 50vw;
+}
+.Partie1img1 {
+  width: 50vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.Partie2img2 {
+  width: 50vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+h4.info {
+  padding-left: 5vw;
+}
+h4.color.liens {
+  padding-left: 5vw;
+}
+
+.bas {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1vh;
+  gap: 5vh;
+}
+
+.lienvgrille {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: blue;
+  color: transparent;
+  font-size: 20px;
+  padding-right: 4vw;
+}
+
+h1.color.logo {
+  position: fixed;
+  font-size: 30px;
+  padding-top: 0px;
+  margin-top: 1vh;
+}
+
+@media screen and (max-width: 700px) {
+  .Article1 {
+    padding-top: 10vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10vh;
+  }
+  h1.color.contour.Titre {
+    margin-bottom: 5vh;
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .Article2 {
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Partie1txt1 {
+    width: 100vw;
+    padding-left: 0px;
+    padding-right: 0px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .Partie2txt2 {
+    position: relative;
+    width: 100vw;
+    padding-right: 0px;
+    padding-left: 0px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .Partie1img1 {
+    width: 100vw;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Partie2img2 {
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #img2 {
+    max-width: 100vw;
+  }
+  #img1 {
+    max-width: 100vw;
+  }
+
+  p.text1 {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    width: 60vw;
+    padding-left: 7vw;
+    padding-right: 2vw;
+  }
+
+  p.text2 {
+    padding-top: 1vh;
+    padding-bottom: 5vh;
+    width: 60vw;
+    padding-left: 7vw;
+  }
+
+  h2.color#le1 {
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+    padding-left: 5vw;
+  }
+
+  h2.color#le2 {
+    padding-bottom: 3vh;
+    padding-left: 7vw;
+    font-weight: 400;
+    font-style: italic;
+    color: blue;
+    font-size: 15px;
+  }
+  .bas {
+    padding-top: 1vh;
+  }
+  .lienvgrille {
+    font-size: 10px;
+    color: blue;
+    -webkit-text-stroke: 0px;
+  }
+  h4#liens {
+    font-size: 10px;
+    flex-wrap: wrap;
+  }
+}
+
+/*----------------------------------
+      Fin Articles
 ----------------------------------*/
