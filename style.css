@@ -1,84 +1,169 @@
-=======
 body {
-    margin: 0;
+  margin: 0;
 }
 .presentation {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 400;
-    color: blue;
-    font-size: 20px;
-    text-align: left;
-    margin-left: 1em;
-    width: 70%;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  color: blue;
+  font-size: 20px;
+  text-align: left;
+  margin-left: 1em;
+  width: 70%;
 }
 h1.color#contour {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 700;
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: blue;
-    color: transparent;
-    font-size: 50px;
-    text-align: center;
-    margin-bottom: 2em;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: blue;
+  color: transparent;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 2em;
 }
 
 .carousel-container {
-    margin: 1em;
-    text-align: center;
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 400;
-    color: black;
-    font-size: 20px;
-    text-align: left;
+  margin: 1em;
+  text-align: center;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  color: black;
+  font-size: 20px;
+  text-align: left;
 }
 
 .carousels {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-content: center;
+  display: none;
 }
 h2.color {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 600;
-    color: blue;
-    font-size: 35px;
-    text-align: center;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  color: blue;
+  font-size: 35px;
+  text-align: center;
 }
 
 .button {
-    margin-left: 50%;
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 400;
-    color: black;
-    font-size: 20px;
+  margin-left: 50%;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  color: black;
+  font-size: 20px;
 }
 
 .button:hover {
-    background-color: blue;
-    color: white;
-    border-radius: 5px;
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
 }
 .img_event {
-    max-width: 100%;
+  max-width: 100%;
 }
 
-.iframe {
-   margin: 1% 2%;
-
-}
-.content{
-
-    width: 70%;
+.content {
+  width: 70%;
 }
 
 @media only screen and (min-width: 780px) {
   .carousels {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
     align-content: center;
+    margin-bottom: 2em;
+  }
+  .slideshow-container {
+    display: none;
+  }
+  .dot {
+    display: none;
+  }
 }
+
+/*--------------------
+   slideshow
+---------------*/
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: 1em;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+.dots{
+  margin-bottom: 2em;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -42px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /*------------------------------------
 --------------------------------------
@@ -87,7 +172,7 @@ h2.color {
 -------------------------------------*/
 
 .footer {
-  border-top: solid rgb(48, 12, 177);
+  border-top: solid blue;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -101,7 +186,7 @@ h2.color {
   -webkit-text-stroke-color: blue;
   color: transparent;
   font-size: 50px;
-  padding-top: 2em;
+  padding-top: 1.5em;
 }
 
 .copy {
@@ -111,9 +196,10 @@ h2.color {
   font-style: italic;
   color: blue;
   font-size: 20px;
+  -webkit-text-stroke: 0;
+  -webkit-text-stroke-color: blue;
 }
 .footer a {
-  margin-top: 1em;
   text-decoration: none;
   display: flex;
   flex-direction: column;
@@ -122,7 +208,10 @@ h2.color {
   font-family: "IBM Plex Mono", monospace;
   font-weight: 600;
   color: blue;
-  font-size: 25px;
+  font-size: 20px;
+}
+.footer-menu {
+  margin-top: 0.5em;
 }
 
 .img_footer {
@@ -153,21 +242,23 @@ a:hover .img_footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 1em;
+    margin: 0em;
   }
   .footer-menu {
     text-decoration: none;
-    color: rgb(47, 8, 187);
+    color: blue;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     margin-right: 1em;
+    margin-top: 0;
+    padding-bottom: 2em;
   }
 
   .logo {
     margin-left: 1em;
-    padding-top: 1em;
+    padding-top: 0em;
   }
 
   .footer a {
@@ -193,14 +284,17 @@ a:hover .img_footer {
     font-style: italic;
     color: blue;
     font-size: 20px;
-    width: 100%;
+    width: 99%;
     text-align: right;
     margin: 0;
   }
-  .footer-menu :hover{
+  .footer-menu :hover {
     background-color: blue;
     color: white;
     transition: background-color 1s ease-in;
+  }
+  .dots {
+    display: none;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1050px) {
@@ -208,23 +302,27 @@ a:hover .img_footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 0;
   }
   .footer-menu {
     text-decoration: none;
-    color: rgb(47, 8, 187);
+    color: blue;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-right: 1em;
+    margin-top: 0;
+    padding-bottom: 2em;
   }
 
   .logo {
-    padding-top: 1em;
+    padding-top: 0em;
   }
 
   .footer a {
     gap: 0.5em;
-    border-right: solid rgb(62, 5, 194);
+    border-right: solid blue;
     padding: 0 0.5em 0 0.5em;
     font-family: "IBM Plex Mono", monospace;
     font-weight: 600;
@@ -245,13 +343,16 @@ a:hover .img_footer {
     font-style: italic;
     color: blue;
     font-size: 20px;
-    width: 100%;
+    width: 99%;
     text-align: right;
     margin: 0;
   }
-  .footer-menu :hover{
+  .footer-menu :hover {
     background-color: blue;
     color: white;
     transition: background-color 1s ease-in;
   }
-
+  .dots {
+    display: none;
+  }
+}
