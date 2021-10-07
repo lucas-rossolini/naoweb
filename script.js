@@ -94,9 +94,3 @@
 
 
   // Footer
-
-  const newP = document.createElement("p");
-    newP.classList = "copyDesk";
-    newP.innerHTML = "Nao_Web &copy; 2021";
-    const footer = document.getElementById("footer_top");
-    footer.appendChild(newP);
