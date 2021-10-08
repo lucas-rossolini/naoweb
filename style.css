@@ -286,7 +286,7 @@ input:checked ~ #nav-header ul li {
   width: 100vw;
   height: 8rem;
   background-color: #fff;
-  z-index: 10;
+  z-index: 99;
 }
 
 /*----------------------------------
