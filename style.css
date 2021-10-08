@@ -299,7 +299,7 @@ input:checked ~ #nav-header ul li {
 
 #accueil {
   height: 100vh;
-  background-image: url("./images/Image-accueil.png");
+  background-image: url("./images/Image-accueil.jpg");
   background-repeat: no-repeat;
   margin: 0;
 }
@@ -416,7 +416,7 @@ input:checked ~ #nav-header ul li {
 @media screen and (min-width: 992px) {
   #accueil {
     height: 100vh;
-    background-image: url("./images/Image-accueil.png");
+    background-image: url("./images/Image-accueil.jpg");
     background-repeat: repeat;
   }
 
@@ -554,6 +554,10 @@ input:checked ~ #nav-header ul li {
   }
 }
 
+.title h4{
+  color:#3000ff;
+  font-size: 2rem;
+}
 /*----------------------------------
         Fin grille actualités
 ----------------------------------*/
@@ -830,7 +834,11 @@ h2.color {
         Fin grille articles
 ----------------------------------*/
 #titre-event {
-  padding: 15rem 0 15rem 10rem;
+  padding: 15rem 0 15rem 5rem;
+}
+
+#titre-workplace {
+  padding: 15rem 0 15rem 5rem;
 }
 
 .presentation {
@@ -839,7 +847,7 @@ h2.color {
   color: blue;
   font-size: 20px;
   text-align: left;
-  margin-left: 1em;
+  margin-left: 4rem;
   width: 70%;
 }
 h1.color#contour {
@@ -1177,7 +1185,7 @@ a:hover .img_footer {
   .dots {
     display: none;
   }
-  span{
+  #adresse{
     font-size: 15px;
   }
 }
@@ -1268,6 +1276,7 @@ a:hover .img_footer {
   gap: 20px;
   font-size: 14px;
   font-weight: 400;
+  margin-bottom: 20px
 }
 
 .contact-section form label {
