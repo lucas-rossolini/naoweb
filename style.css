@@ -300,7 +300,7 @@ input:checked ~ #nav-header ul li {
 #accueil {
   height: 100vh;
   background-image: url("./images/Image-accueil.jpg");
-  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0;
 }
 
