@@ -834,11 +834,11 @@ h2.color {
         Fin grille articles
 ----------------------------------*/
 #titre-event {
-  padding: 15rem 0 15rem 5rem;
+  padding: 15rem 0 5rem 5rem;
 }
 
 #titre-workplace {
-  padding: 15rem 0 15rem 5rem;
+  padding: 15rem 0 5rem 5rem;
 }
 
 .presentation {
@@ -848,6 +848,7 @@ h2.color {
   font-size: 20px;
   text-align: left;
   margin-left: 4rem;
+  margin-bottom: 5rem;
   width: 70%;
 }
 h1.color#contour {
