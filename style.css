@@ -955,12 +955,12 @@ h2.color {
 
   .texte_centrer {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 150px;
-    font-style: oblique;
+    top: 40%;
+    left: 30%;
+    font-size: 120px;
     background-color: black;
+    transform: rotate(-20deg) ;
+    padding: auto;
   }
 
 }
