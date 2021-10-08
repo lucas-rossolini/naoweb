@@ -1554,7 +1554,6 @@ a:hover .img_footer {
   flex-direction: column;
   padding-left: 15vw;
   padding-right: 50px;
-
   justify-content: center;
 }
 .Partie2txt2 {
@@ -1562,7 +1561,7 @@ a:hover .img_footer {
   width: 50vw;
   height: 100vh;
   display: flex;
-
+  padding-top: 10rem;
   flex-direction: column;
 
   padding-left: 50px;
@@ -1577,7 +1576,7 @@ p.text1 {
   padding-top: 2vh;
   padding-left: 5vw;
 }
-p.texte {
+p.text2 {
   width: 25vw;
   padding-top: 2vh;
   padding-left: 5vw;
